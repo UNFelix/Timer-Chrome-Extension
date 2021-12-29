@@ -40,3 +40,11 @@
   width: 15px;
   height: auto;
 }
+
+.active {
+  color: #52c41a;
+}
+
+.draft {
+  color: #2f54eb;
+}

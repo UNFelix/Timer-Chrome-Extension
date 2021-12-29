@@ -47,7 +47,7 @@
     </nav>
 
     <div class="subheader">
-      <div class="active__task">Active Task Name</div>
+      <div class="subheader__taskname">Active Task Name</div>
       <button type="button" class="subheader__tasks">
         <span class="task">Last activities ▼</span>
       </button>
@@ -56,15 +56,33 @@
 
   <main class="main">
     <div class="search">
-      <label>
+      <label class="search__blocks">
+        <input class="task__search" type="text" placeholder="Task Search">
         <svg xmlns="http://www.w3.org/2000/svg" id="icon-search" viewBox="0 0 512 512" preserveAspectRatio="none"
-          fill="currentColor" class="page-search-target__icon">
+          fill="#aeaeae" class="page-search-target__icon">
           <path
             d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
           </path>
         </svg>
-        <input type="text" placeholder="Task Search">
       </label>
+    </div>
+    <div class="tasks">
+      <div class="task__block">
+        <a class="task__title" href="#">Task Title</a>
+        <div class="task__content">
+          <svg viewBox="0 0 1024 1024" focusable="false" class="activate__task" data-icon="caret-right" width="1em"
+            height="1em" fill="currentColor" aria-hidden="true">
+            <path
+              d="M715.8 493.5L335 165.1c-14.2-12.2-35-1.2-35 18.5v656.8c0 19.7 20.8 30.7 35 18.5l380.8-328.4c10.9-9.4 10.9-27.6 0-37z">
+            </path>
+          </svg>
+          <span class="task__status active">Activate</span>
+          <svg class="more" data-icon="more" width="16" height="16" viewBox="0 0 16 16">
+            <path d="M2 6.03a2 2 0 100 4 2 2 0 100-4zM14 6.03a2 2 0 100 4 2 2 0 100-4zM8 6.03a2 2 0 100 4 2 2 0 100-4z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -90,12 +108,7 @@
     </path>
   </svg>
 
-  <svg viewBox="0 0 1024 1024" focusable="false" class="" data-icon="caret-right" width="1em" height="1em"
-    fill="currentColor" aria-hidden="true">
-    <path
-      d="M715.8 493.5L335 165.1c-14.2-12.2-35-1.2-35 18.5v656.8c0 19.7 20.8 30.7 35 18.5l380.8-328.4c10.9-9.4 10.9-27.6 0-37z">
-    </path>
-  </svg>
+
 
   <svg viewBox="64 64 896 896" focusable="false" class="" data-icon="down" width="1em" height="1em" fill="currentColor"
     aria-hidden="true">
