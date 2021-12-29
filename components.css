@@ -35,3 +35,8 @@
   color: #fa8c16;
   border-color: #ffd591;
 }
+
+.page-search-target__icon {
+  width: 15px;
+  height: auto;
+}
