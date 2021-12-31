@@ -43,7 +43,6 @@ body {
 }
 
 .time__block {
-  // align-items: center;
   padding-left: 5px;
 }
 
@@ -123,4 +122,60 @@ body {
 
 .more {
   transform: rotate(90deg);
+}
+
+.details {
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.details,
+.task__details,
+.details__info {
+  display: flex;
+  align-items: center;
+}
+
+.divide {
+  margin-right: -7px;
+  padding-left: 5px;
+}
+
+.email__icon {
+  padding: 5px;
+}
+
+.name__details,
+.subtack {
+  padding: 10px 15px;
+}
+
+.task__descr {
+  height: 150px;
+}
+
+.task__descr,
+.subtask__add {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #aeaeae;
+  &:active,
+  &:focus,
+  &::placeholder {
+    padding: 10px;
+  }
+}
+
+.subtask {
+  padding: 15px;
+  height: 25px;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  &__title-block {
+    display: flex;
+  }
 }
