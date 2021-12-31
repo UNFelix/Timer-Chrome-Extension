@@ -30,6 +30,7 @@ body {
 }
 
 .subheader {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -186,14 +187,45 @@ body {
   }
 }
 
-.activate {
+.activate,
+.pause {
   &__task {
     cursor: pointer;
   }
 }
 
-.pause {
-  &__task {
-    cursor: pointer;
+.dropdown {
+  position: absolute;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #aeaeae;
+  z-index: 1;
+}
+
+.activities {
+  top: 45px;
+  right: 3px;
+  opacity: 0;
+  animation: show 0.5s 1 forwards;
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__item {
+    margin: 5px 0;
+    display: block;
+    color: #1890ff;
+    text-decoration: none;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+  100% {
+    opacity: 1;
+    top: 45px;
   }
 }
