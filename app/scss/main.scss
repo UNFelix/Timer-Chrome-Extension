@@ -211,8 +211,13 @@ body {
     margin-bottom: 10px;
     text-align: center;
   }
+  &__block {
+    display: flex;
+    align-items: center;
+  }
   &__item {
     margin: 5px 0;
+    padding-right: 5px;
     display: block;
     color: #1890ff;
     text-decoration: none;
