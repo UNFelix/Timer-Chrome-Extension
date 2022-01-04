@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-size: 16px;
   font-family: sans-serif;
 }
 
@@ -9,12 +8,20 @@ body {
   width: 100%;
   max-width: 600px;
   height: 800px;
-  border: 3px solid #aeaeae;
+  font-size: 14px;
+  background-color: #313e4d;
+}
+
+.body__wrapper {
+  background-color: #cad2df;
+  border-radius: 3px;
 }
 
 .header {
   padding: 10px 0;
-  border-bottom: 3px solid #aeaeae;
+  background-color: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   &__nav {
     display: flex;
     align-items: center;
@@ -36,6 +43,7 @@ body {
   justify-content: space-between;
   margin-top: 10px;
   padding: 10px 15px 0;
+  background-color: #fff;
   border-top: 1px solid #aeaeae;
   &__tasks {
     border: none;
@@ -49,6 +57,7 @@ body {
   display: flex;
   &__block {
     display: flex;
+    align-items: center;
     padding-left: 5px;
   }
   &__today,
@@ -58,77 +67,100 @@ body {
 }
 
 .main {
-  padding: 10px 0;
+  margin: 8px 0;
+  padding-bottom: 2px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .search {
-  padding-bottom: 10px;
+  padding: 9px 0;
   text-align: center;
-  border-bottom: 3px solid #aeaeae;
-  &__blocks {
-    position: relative;
-  }
-  &__icon {
-    position: absolute;
-    left: 10px;
-    top: 1px;
+  background-color: #fff;
+}
+
+.default {
+  &__input {
+    display: inline-block;
+    margin: 0;
+    padding: 4px 11px;
+    width: 95%;
+    min-width: 0;
+    height: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.5715;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all 0.3s;
+    &:focus {
+      border-color: #40a9ff;
+      outline: 0;
+      box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    }
+    &:hover {
+      border-color: #40a9ff;
+    }
   }
 }
 
 .task {
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
   &__block {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    border-bottom: 1px solid #aeaeae;
+    &__info {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
   }
   &__title {
-    color: #000;
+    color: #262626;
+    font-size: 14px;
+    font-weight: 400;
     text-decoration: none;
-    font-size: 20px;
+    line-height: 22px;
+  }
+  &__id {
+    font-size: 12px;
+    line-height: 1.2;
   }
   &__content {
     display: flex;
-    align-items: center;
     cursor: pointer;
+  }
+  &__controlls {
+    display: flex;
   }
   &__status {
     padding: 0 5px;
-  }
-  &__details {
-    display: flex;
-    align-items: center;
+    color: rgb(54, 179, 126);
+    font-size: 13px;
+    border-radius: 4px;
+    text-transform: capitalize;
   }
   &__descr {
     height: 150px;
     margin-top: 10px;
     width: 100%;
     border: 1px solid #aeaeae;
+    outline: none;
     &:active,
     &:focus,
     &::placeholder {
       padding: 10px;
     }
   }
-  &__search {
-    width: 80%;
-    border: 1px solid #aeaeae;
-    &::placeholder {
-      padding-left: 25px;
-    }
-    &:focus-visible {
-      outline: none;
-    }
-    &:active + .search__icon,
-    &:focus + .search__icon {
-      margin-left: -30px;
-      transition: 0.5s;
-    }
-  }
 }
 
 .more {
+  height: 15px;
   transform: rotate(90deg);
 }
 
@@ -136,11 +168,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 15px 8px;
+  margin: -8px 0;
+  background-color: #f1f6ff;
+  &__task {
+    display: flex;
+    align-items: center;
+  }
   &__info {
     display: flex;
     align-items: center;
   }
+}
+
+.activity {
+  display: flex;
+  align-items: center;
 }
 
 .divide {
@@ -150,28 +193,28 @@ body {
 
 .email {
   &__icon {
-    padding: 5px;
+    margin-right: 5px;
+    padding: 3px;
+    font-size: 14px;
+    border-radius: 2px;
   }
 }
 
 .name {
   &__details {
     padding: 10px 15px;
+    background-color: #fff;
   }
 }
 
 .subtask {
   padding: 15px;
-  height: 25px;
+  background-color: #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   &__add {
-    margin-top: 10px;
     width: 100%;
-    border: 1px solid #aeaeae;
-    &:active,
-    &:focus,
-    &::placeholder {
-      padding: 10px;
-    }
+    height: 25px;
   }
   &__title {
     padding-right: 2px;
@@ -181,6 +224,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
+    background-color: #fff;
   }
   &__title-block {
     display: flex;
@@ -198,25 +242,29 @@ body {
   position: absolute;
   padding: 10px;
   background-color: #fff;
-  border: 2px solid #aeaeae;
+  border: 1px solid #aeaeae;
+  border-radius: 2px;
   z-index: 1;
 }
 
 .activities {
   top: 45px;
   right: 3px;
+  width: 298px;
   opacity: 0;
   animation: show 0.5s 1 forwards;
   &__title {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 2px;
+    color: #262626;
+    font-weight: 600;
   }
   &__block {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   &__item {
-    margin: 5px 0;
+    margin: 2px 0;
     padding-right: 5px;
     display: block;
     color: #1890ff;

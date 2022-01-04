@@ -13,117 +13,124 @@
 </head>
 
 <body>
-
-  <header class="header">
-    <nav class="header__nav">
-      <button class="header__projects">
-        <span class="project">▼ Gearheart - General</span>
-      </button>
-      <div class="time">
-        <div class="time__block">
-          <svg viewBox="64 64 896 896" focusable="false" class="" data-icon="hourglass" width="1em" height="1em"
-            fill="currentColor" aria-hidden="true">
-            <path
-              d="M742 318V184h86c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H196c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h86v134c0 81.5 42.4 153.2 106.4 194-64 40.8-106.4 112.5-106.4 194v134h-86c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h632c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-86V706c0-81.5-42.4-153.2-106.4-194 64-40.8 106.4-112.5 106.4-194zm-72 388v134H354V706c0-42.2 16.4-81.9 46.3-111.7C430.1 564.4 469.8 548 512 548s81.9 16.4 111.7 46.3C653.6 624.1 670 663.8 670 706zm0-388c0 42.2-16.4 81.9-46.3 111.7C593.9 459.6 554.2 476 512 476s-81.9-16.4-111.7-46.3A156.63 156.63 0 01354 318V184h316v134z">
-            </path>
-          </svg>
-          <span class="time__today">00:00</span>
-        </div>
-        <div class="time__block">
-          <svg viewBox="64 64 896 896" focusable="false" class="" data-icon="calendar" width="1em" height="1em"
-            fill="currentColor" aria-hidden="true">
-            <path
-              d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z">
-            </path>
-          </svg>
-          <span class="time__month">00:00</span>
-        </div>
-      </div>
-      <button type="button" class="btn btn--new">
-        <span class="text--size">New Task</span>
-      </button>
-    </nav>
-
-    <div class="subheader">
-      <div class="subheader__taskname">Active Task Name</div>
-      <button type="button" class="subheader__tasks">
-        <span class="task">Last activities ▼</span>
-      </button>
-      <div class="activities dropdown hidden">
-        <h4 class="activities__title">My last activities:</h4>
-        <div class="activities__blocks">
-          <div class="activities__block">
-            <a class="activities__item" href="#">Gearheart - General (communication)</a>
-            <svg viewBox="0 0 1024 1024" focusable="false" class="activate__task" data-icon="caret-right" width="1em"
-              height="1em" fill="currentColor" aria-hidden="true">
-              <path
-                d="M715.8 493.5L335 165.1c-14.2-12.2-35-1.2-35 18.5v656.8c0 19.7 20.8 30.7 35 18.5l380.8-328.4c10.9-9.4 10.9-27.6 0-37z">
-              </path>
-            </svg>
-            <svg viewBox="64 64 896 896" focusable="false" class="pause__task hidden" data-icon="pause-task" width="1em"
-              height="1em" fill="#2f54eb" aria-hidden="true">
-              <path
-                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372zm-88-532h-48c-4.4 0-8 3.6-8 8v304c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V360c0-4.4-3.6-8-8-8zm224 0h-48c-4.4 0-8 3.6-8 8v304c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V360c0-4.4-3.6-8-8-8z">
-              </path>
-            </svg>
+  <div class="body__wrapper">
+    <header class="header">
+      <nav class="header__nav">
+        <button class="header__projects">
+          <span class="project">▼ Gearheart - General</span>
+        </button>
+        <div class="time">
+          <div class="time__block">
+            <img class="hourglass" src="./img/hourglass.svg" alt="hourglass">
+            <span class="time__today">00:00</span>
           </div>
-          <div class="activities__block">
-            <a class="activities__item" href="#">Gearheart - General (communication)</a>
-            <svg viewBox="0 0 1024 1024" focusable="false" class="activate__task" data-icon="caret-right" width="1em"
-              height="1em" fill="currentColor" aria-hidden="true">
-              <path
-                d="M715.8 493.5L335 165.1c-14.2-12.2-35-1.2-35 18.5v656.8c0 19.7 20.8 30.7 35 18.5l380.8-328.4c10.9-9.4 10.9-27.6 0-37z">
-              </path>
-            </svg>
-            <svg viewBox="64 64 896 896" focusable="false" class="pause__task hidden" data-icon="pause-task" width="1em"
-              height="1em" fill="#2f54eb" aria-hidden="true">
-              <path
-                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372zm-88-532h-48c-4.4 0-8 3.6-8 8v304c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V360c0-4.4-3.6-8-8-8zm224 0h-48c-4.4 0-8 3.6-8 8v304c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V360c0-4.4-3.6-8-8-8z">
-              </path>
-            </svg>
+          <div class="time__block">
+            <img class="calendar" src="./img/calendar.svg" alt="calendar">
+            <span class="time__month">00:00</span>
+          </div>
+        </div>
+        <button type="button" class="btn btn--new">
+          <span class="btn__text">New Task</span>
+        </button>
+      </nav>
+
+      <div class="subheader">
+        <div class="subheader__taskname">Active Task Name</div>
+        <button type="button" class="subheader__tasks">
+          <span class="task__activities">Last activities ▼</span>
+        </button>
+        <div class="activities dropdown hidden">
+          <h4 class="activities__title">My last activities:</h4>
+          <div class="activities__blocks">
+            <div class="activities__block">
+              <div class="task__controlls">
+                <img class="activate__task" src="./img/activate__task.svg" alt="activate">
+                <img class="pause__task hidden" src="./img/pause__task hidden.svg" alt="pause">
+              </div>
+              <a class="activities__item" href="#">Gearheart - General (communication)</a>
+            </div>
+            <div class="activities__block">
+              <div class="task__controlls">
+                <img class="activate__task" src="./img/activate__task.svg" alt="activate">
+                <img class="pause__task hidden" src="./img/pause__task hidden.svg" alt="pause">
+              </div>
+              <a class="activities__item" href="#">Gearheart - General (communication)</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <div class="search">
-      <label class="search__blocks">
-        <input class="task__search" type="text" placeholder="Task Search">
-        <svg xmlns="http://www.w3.org/2000/svg" id="icon-search" viewBox="0 0 512 512" preserveAspectRatio="none"
-          fill="#aeaeae" class="search__icon">
-          <path
-            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
-          </path>
-        </svg>
-      </label>
-    </div>
-    <div class="tasks">
-      <div class="task__block">
-        <a class="task__title" href="inside-task.html">Task Title</a>
-        <div class="task__content">
-          <svg viewBox="0 0 1024 1024" focusable="false" class="activate__task" data-icon="caret-right" width="1em"
-            height="1em" fill="currentColor" aria-hidden="true">
-            <path
-              d="M715.8 493.5L335 165.1c-14.2-12.2-35-1.2-35 18.5v656.8c0 19.7 20.8 30.7 35 18.5l380.8-328.4c10.9-9.4 10.9-27.6 0-37z">
-            </path>
-          </svg>
-          <svg viewBox="64 64 896 896" focusable="false" class="pause__task hidden" data-icon="pause-task" width="1em"
-            height="1em" fill="#2f54eb" aria-hidden="true">
-            <path
-              d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372zm-88-532h-48c-4.4 0-8 3.6-8 8v304c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V360c0-4.4-3.6-8-8-8zm224 0h-48c-4.4 0-8 3.6-8 8v304c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V360c0-4.4-3.6-8-8-8z">
-            </path>
-          </svg>
-          <span class="task__status active">Activate</span>
-          <svg class="more" data-icon="more" width="16" height="16" viewBox="0 0 16 16">
-            <path d="M2 6.03a2 2 0 100 4 2 2 0 100-4zM14 6.03a2 2 0 100 4 2 2 0 100-4zM8 6.03a2 2 0 100 4 2 2 0 100-4z"
-              fill-rule="evenodd"></path>
-          </svg>
+    <main class="main">
+      <div class="search">
+        <input placeholder="Quick Task Search..." class="search__task default__input" maxlength="255" type="text"
+          tabindex="0" value="">
+      </div>
+      <div class="task">
+        <div class="task__block">
+          <div class="task__block__info">
+            <a class="task__title" href="inside-task.html">Task Title</a>
+            <div class="details__info">
+              <span class="status unknown">M</span>
+              <span class="task__id">GE-34181</span>
+              <div class="task__controlls">
+              </div>
+            </div>
+          </div>
+          <div class="task__content">
+            <div class="task__controlls">
+              <img class="activate__task task__controll" src="./img/activate__task.svg" alt="activate">
+              <img class="pause__task hidden task__controll" src="./img/pause__task hidden.svg" alt="pause">
+            </div>
+            <span class="task__status active">Active</span>
+            <img class="more" src="./img/more.svg" alt="more">
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+      <div class="task">
+        <div class="task__block">
+          <div class="task__block__info">
+            <a class="task__title" href="inside-task.html">Task Title</a>
+            <div class="details__info">
+              <span class="status deadline">M</span>
+              <span class="task__id">GE-34181</span>
+              <div class="task__controlls">
+              </div>
+            </div>
+          </div>
+          <div class="task__content">
+            <div class="task__controlls">
+              <img class="activate__task task__controll" src="./img/activate__task.svg" alt="activate">
+              <img class="pause__task hidden task__controll" src="./img/pause__task hidden.svg" alt="pause">
+            </div>
+            <span class="task__status active">Active</span>
+            <img class="more" src="./img/more.svg" alt="more">
+          </div>
+        </div>
+      </div>
+      <div class="task">
+        <div class="task__block">
+          <div class="task__block__info">
+            <a class="task__title" href="inside-task.html">Task Title</a>
+            <div class="details__info">
+              <span class="status medium">M</span>
+              <span class="task__id">GE-34181</span>
+              <div class="task__controlls">
+              </div>
+            </div>
+          </div>
+          <div class="task__content">
+            <div class="task__controlls">
+              <img class="activate__task task__controll" src="./img/activate__task.svg" alt="activate">
+              <img class="pause__task hidden task__controll" src="./img/pause__task hidden.svg" alt="pause">
+            </div>
+            <span class="task__status active">Active</span>
+            <img class="more" src="./img/more.svg" alt="more">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
 
 
 
@@ -140,16 +147,7 @@
     <span class="text--size">QA</span>
   </button>
 
-
-
-
-
-  <svg viewBox="64 64 896 896" focusable="false" class="" data-icon="down" width="1em" height="1em" fill="currentColor"
-    aria-hidden="true">
-    <path
-      d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z">
-    </path>
-  </svg> -->
+ -->
 
   <script src="js/main.js"></script>
 </body>
