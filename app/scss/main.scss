@@ -35,6 +35,12 @@ body {
     cursor: pointer;
   }
 }
+.project {
+  &__dropdown {
+    width: 10px;
+    height: 10px;
+  }
+}
 
 .subheader {
   position: relative;
@@ -110,14 +116,11 @@ body {
   background-color: #fff;
   border-bottom: 1px solid #d9d9d9;
   &__block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px 20px;
     &__info {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      flex-direction: column-reverse;
     }
   }
   &__title {
@@ -128,11 +131,57 @@ body {
     line-height: 22px;
   }
   &__id {
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #595959;
     font-size: 12px;
     line-height: 1.2;
   }
+  &__filter {
+    position: relative;
+    max-width: 150px;
+    min-width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #8c8c8c;
+    margin-left: 8px;
+    padding-left: 8px;
+    letter-spacing: -0.3px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 12px;
+      background-color: #e8e8e8;
+    }
+    &__btn {
+      max-width: 60px;
+      max-height: 17px;
+      min-height: 0;
+      padding: 2px 7px 2px 6px;
+      font-size: 10px;
+      color: #8c8c8c;
+      border: 1px solid #d9d9d9;
+      border-radius: 2px;
+      white-space: nowrap;
+      box-shadow: none;
+      background-color: transparent;
+    }
+    &__text {
+      bottom: 1px;
+      line-height: 1.1;
+      display: block;
+      overflow: hidden;
+    }
+  }
   &__content {
     display: flex;
+    align-items: center;
     cursor: pointer;
   }
   &__controlls {
@@ -159,6 +208,12 @@ body {
   }
 }
 
+.spent {
+  &__time {
+    margin-left: 8px;
+  }
+}
+
 .more {
   height: 15px;
   transform: rotate(90deg);
@@ -178,6 +233,7 @@ body {
   &__info {
     display: flex;
     align-items: center;
+    margin-left: -19px;
   }
 }
 
@@ -193,9 +249,11 @@ body {
 
 .email {
   &__icon {
-    margin-right: 5px;
-    padding: 3px;
-    font-size: 14px;
+    margin: 0 8px;
+    width: 22px;
+    height: 22px;
+    padding: 5px 2px;
+    font-size: 13px;
     border-radius: 2px;
   }
 }
@@ -234,6 +292,7 @@ body {
 .activate,
 .pause {
   &__task {
+    width: 14px;
     cursor: pointer;
   }
 }
@@ -261,10 +320,9 @@ body {
   &__block {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   &__item {
-    margin: 2px 0;
+    margin: 2px 0 2px 3px;
     padding-right: 5px;
     display: block;
     color: #1890ff;

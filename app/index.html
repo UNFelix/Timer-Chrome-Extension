@@ -17,7 +17,8 @@
     <header class="header">
       <nav class="header__nav">
         <button class="header__projects">
-          <span class="project">▼ Gearheart - General</span>
+          <img class="project__dropdown" src="./img/dropdown.svg" alt="dropdown">
+          <span class="project">Gearheart - General</span>
         </button>
         <div class="time">
           <div class="time__block">
@@ -37,7 +38,8 @@
       <div class="subheader">
         <div class="subheader__taskname">Active Task Name</div>
         <button type="button" class="subheader__tasks">
-          <span class="task__activities">Last activities ▼</span>
+          <span class="task__activities">Last activities</span>
+          <img class="project__dropdown" src="./img/dropdown.svg" alt="dropdown">
         </button>
         <div class="activities dropdown hidden">
           <h4 class="activities__title">My last activities:</h4>
@@ -69,66 +71,58 @@
       <div class="task">
         <div class="task__block">
           <div class="task__block__info">
-            <a class="task__title" href="inside-task.html">Task Title</a>
             <div class="details__info">
+              <img class="task__dropper" src="./img/task-dropper.svg" alt="drag&drop">
+              <img class="task__type" src="./img/task-type.svg" alt="task type">
               <span class="status unknown">M</span>
               <span class="task__id">GE-34181</span>
-              <div class="task__controlls">
+              <div class="task__filter">
+                <button class="task__filter__btn"><span class="task__filter__text">Backlog</span></button>
               </div>
             </div>
-          </div>
-          <div class="task__content">
-            <div class="task__controlls">
-              <img class="activate__task task__controll" src="./img/activate__task.svg" alt="activate">
-              <img class="pause__task hidden task__controll" src="./img/pause__task hidden.svg" alt="pause">
+            <div class="task__content">
+              <div class="task__controlls">
+                <img class="activate__task task__controll" src="./img/activate__task.svg" alt="activate">
+                <img class="pause__task hidden task__controll" src="./img/pause__task hidden.svg" alt="pause">
+              </div>
+              <span class="spent__time">68:00</span>
+              <span class="email__icon medium">ES</span>
+              <button type="button" class="btn btn--accepted">
+                <span class="text--size">Accepted</span>
+              </button>
             </div>
-            <span class="task__status active">Active</span>
-            <img class="more" src="./img/more.svg" alt="more">
           </div>
+          <a class="task__title" href="inside-task.html">Task Title</a>
         </div>
       </div>
       <div class="task">
         <div class="task__block">
           <div class="task__block__info">
-            <a class="task__title" href="inside-task.html">Task Title</a>
             <div class="details__info">
-              <span class="status deadline">M</span>
+              <img class="task__dropper" src="./img/task-dropper.svg" alt="drag&drop">
+              <img class="task__type" src="./img/task-type.svg" alt="task type">
+              <span class="status unknown">M</span>
               <span class="task__id">GE-34181</span>
-              <div class="task__controlls">
+              <div class="task__filter">
+                <button class="task__filter__btn"><span class="task__filter__text">Backlog</span></button>
               </div>
             </div>
-          </div>
-          <div class="task__content">
-            <div class="task__controlls">
-              <img class="activate__task task__controll" src="./img/activate__task.svg" alt="activate">
-              <img class="pause__task hidden task__controll" src="./img/pause__task hidden.svg" alt="pause">
-            </div>
-            <span class="task__status active">Active</span>
-            <img class="more" src="./img/more.svg" alt="more">
-          </div>
-        </div>
-      </div>
-      <div class="task">
-        <div class="task__block">
-          <div class="task__block__info">
-            <a class="task__title" href="inside-task.html">Task Title</a>
-            <div class="details__info">
-              <span class="status medium">M</span>
-              <span class="task__id">GE-34181</span>
+            <div class="task__content">
               <div class="task__controlls">
+                <img class="activate__task task__controll" src="./img/activate__task.svg" alt="activate">
+                <img class="pause__task hidden task__controll" src="./img/pause__task hidden.svg" alt="pause">
               </div>
+              <span class="spent__time">68:00</span>
+              <span class="email__icon medium">ES</span>
+              <button type="button" class="btn btn--accepted">
+                <span class="text--size">Accepted</span>
+              </button>
             </div>
           </div>
-          <div class="task__content">
-            <div class="task__controlls">
-              <img class="activate__task task__controll" src="./img/activate__task.svg" alt="activate">
-              <img class="pause__task hidden task__controll" src="./img/pause__task hidden.svg" alt="pause">
-            </div>
-            <span class="task__status active">Active</span>
-            <img class="more" src="./img/more.svg" alt="more">
-          </div>
+          <a class="task__title" href="inside-task.html">Task Title</a>
         </div>
       </div>
+
     </main>
   </div>
 
