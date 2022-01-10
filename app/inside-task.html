@@ -65,26 +65,28 @@
   <main class="main">
     <div class="details">
       <div class="details__task">
-        <a class="back" href="./">‹</a>
-        <div class="details__info">
-          <span class="status unknown">M</span>
-          <span class="task__id">GE-34181</span>
+        <a class="back" href="./"><img class="back__img" src="./img/dropdown.svg" alt="drag&drop"></a>
+        <div class="details__info default">
+          <img class="task__type big bordered" src="./img/task-type.svg" alt="task type">
+          <span class="status unknown big">M</span>
           <div class="task__controlls">
             <img class="activate__task" src="./img/activate__task.svg" alt="activate">
             <img class="pause__task hidden" src="./img/pause__task hidden.svg" alt="pause">
           </div>
         </div>
-      </div>
-      <div class="time">
-        <div class="time__block">
-          <span class="time__today">00:00</span>
+        <div class="time">
+          <div class="time__block default">
+            <span class="time__today">00:00</span>
+          </div>
+          <span class="divide">/</span>
+          <div class="time__block">
+            <span class="time__month">00:00</span>
+          </div>
         </div>
-        <span class="divide">/</span>
-        <div class="time__block">
-          <span class="time__month">00:00</span>
-        </div>
       </div>
+
       <div class="activity">
+        <span class="email__name">Name</span>
         <span class="email__icon medium">ES</span>
         <button type="button" class="btn btn--progress">
           <span class="text--size">In Progress</span>
@@ -92,9 +94,44 @@
       </div>
     </div>
 
+    <div class="panel">
+      <div class="panel__wrapper">
+        <div class="panel-btns">
+          <button class="task__filter__btn">
+            <span class="task__filter__text">GE</span>
+          </button>
+          <span class="separator">/</span>
+          <button class="task__filter__btn">
+            <span class="task__filter__text">Backlog</span>
+          </button>
+          <span class="separator">/</span>
+          <button class="task__filter__btn">
+            <span class="task__filter__text">---</span>
+          </button>
+          <span class="separator">/</span>
+          <span class="task__id">GE-34181</span>
+        </div>
+        <div class="panel__date">
+          <div class="create">
+            CREATED: <span class="create__date">28 Dec 2021</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
     <div class="name__details">
       <h2 class="task__title">Task Title</h2>
-      <input class="task__descr" type="text" placeholder="Please enter description here...">
+      <!-- <input class="task__descr" type="text" placeholder="Please enter description here..."> -->
+      <div class="prose-mirror-editor project-page-editor task-panel-editor has-footer">
+        <div contenteditable="true" class="ProseMirror">
+          <p class="empty-node" data-placeholder="Please enter description here..."><br></p>
+        </div>
+        <div>
+        </div>
+      </div>
     </div>
 
     <div class="subtask">

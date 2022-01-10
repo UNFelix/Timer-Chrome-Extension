@@ -18,6 +18,7 @@ body {
 }
 
 .header {
+  margin-bottom: 8px;
   padding: 10px 0;
   background-color: #fff;
   border-top-left-radius: 3px;
@@ -51,8 +52,12 @@ body {
   padding: 10px 15px 0;
   background-color: #fff;
   border-top: 1px solid #aeaeae;
+  &__taskname {
+    color: #002766;
+  }
   &__tasks {
     border: none;
+    color: #002766;
     outline: none;
     background-color: transparent;
     cursor: pointer;
@@ -114,9 +119,9 @@ body {
 
 .task {
   background-color: #fff;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #e8e8e8;
   &__block {
-    padding: 10px 20px;
+    padding: 8px 16px 8px 14px;
     &__info {
       display: flex;
       justify-content: space-between;
@@ -125,8 +130,8 @@ body {
   }
   &__title {
     color: #262626;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
     line-height: 22px;
   }
@@ -223,8 +228,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px 8px;
-  margin: -8px 0;
+  padding: 8px 16px;
   background-color: #f1f6ff;
   &__task {
     display: flex;
@@ -233,13 +237,49 @@ body {
   &__info {
     display: flex;
     align-items: center;
-    margin-left: -19px;
+    margin-left: -15px;
   }
+}
+
+.back {
+  &__img {
+    margin-right: 8px;
+    width: 10px;
+    height: auto;
+    transform: rotate(90deg);
+  }
+}
+
+.default {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .activity {
   display: flex;
   align-items: center;
+}
+
+.panel {
+  padding: 11px 16px;
+  background-color: #fff;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__date {
+    font-weight: 500;
+    color: #8c8c8c;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.create {
+  &__date {
+    font-weight: 400;
+  }
 }
 
 .divide {
@@ -338,5 +378,69 @@ body {
   100% {
     opacity: 1;
     top: 45px;
+  }
+}
+
+.task-panel-editor {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.prose-mirror-editor {
+  border: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.project-page-editor .ProseMirror {
+  min-height: 100px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.prose-mirror-editor .ProseMirror {
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.prose-mirror-editor .ProseMirror .empty-node {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.prose-mirror-editor .ProseMirror .empty-node:before {
+  font-style: normal;
+  color: #bfbfbf;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+.ProseMirror p.empty-node:before {
+  white-space: nowrap;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+
+.editor-footer {
+  border-top: 0;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.3s;
+  padding-bottom: 5px;
+}
+
+.ProseMirror p.empty-node:first-child:before {
+  content: attr(data-placeholder);
+}
+
+.small {
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
   }
 }
