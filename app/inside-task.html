@@ -125,20 +125,59 @@
     <div class="name__details">
       <h2 class="task__title">Task Title</h2>
       <input class="task__descr" type="text" placeholder="Please enter description here...">
-      <!-- <div class="prose-mirror-editor project-page-editor task-panel-editor has-footer">
-        <div contenteditable="true" class="ProseMirror">
-          <p class="empty-node" data-placeholder="Please enter description here..."><br></p>
-        </div>
-        <div>
-        </div>
-      </div> -->
     </div>
 
     <div class="subtask">
-      <h4 class="subtasks">Subtasks</h4>
-      <input class="subtask__add default__input" type="text" placeholder="Quick Add Task...">
+      <div class="subtask__filter">
+        <div class="filter__block">
+          <span class="filter__img__wrapper">
+            <img class="filter__img" src="./img/subtask-filter.svg" alt="filter icon">
+          </span>
+          <h4 class="subtasks">Subtasks</h4>
+        </div>
+        <div class="time">
+          <div class="time__block default">
+            <span class="time__today">00:00</span>
+          </div>
+          <span class="divide">/</span>
+          <div class="time__block">
+            <span class="time__month">00:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="subtask__add__wrapper">
+        <input class="subtask__add default__input" type="text" placeholder="Quick Add Task...">
+      </div>
       <div class="subtask__block">
         <div class="subtask__title-block">
+          <img class="task__dropper" src="./img/task-dropper.svg" alt="drag&drop">
+          <img class="pluse" src="./img/pluse.svg" alt="pluse">
+          <h5 class="subtask__title">Subtask Title</h5>
+          <div class="task__controlls">
+            <img class="activate__task" src="./img/activate__task.svg" alt="activate">
+            <img class="pause__task hidden" src="./img/pause__task hidden.svg" alt="pause">
+          </div>
+        </div>
+        <div class="time">
+          <div class="time__block">
+            <span class="time__today">00:00</span>
+          </div>
+          <span class="divide">/</span>
+          <div class="time__block">
+            <span class="time__month">00:00</span>
+          </div>
+        </div>
+        <div class="activity">
+          <span class="email__icon medium">ES</span>
+          <button type="button" class="btn btn--progress">
+            <span class="text--size">In Progress</span>
+          </button>
+        </div>
+      </div>
+      <div class="subtask__block">
+        <div class="subtask__title-block">
+          <img class="task__dropper" src="./img/task-dropper.svg" alt="drag&drop">
+          <img class="pluse" src="./img/pluse.svg" alt="pluse">
           <h5 class="subtask__title">Subtask Title</h5>
           <div class="task__controlls">
             <img class="activate__task" src="./img/activate__task.svg" alt="activate">
