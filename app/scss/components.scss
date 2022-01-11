@@ -1,9 +1,9 @@
 .btn {
-  padding: 4px 8px;
+  padding: 5px 8px 3px;
   background-color: transparent;
   font-size: 12px;
   border: 1px solid;
-  border-radius: 2px;
+  border-radius: 3px;
   outline: none;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   cursor: pointer;
@@ -29,10 +29,8 @@
     border-color: #d3adf7;
   }
   &--accepted {
-    padding: 5px 8px 3px;
     color: #52c41a;
     border-color: #b7eb8f;
-    border-radius: 3px;
   }
   &--qa {
     color: #fa8c16;
@@ -84,14 +82,17 @@
 }
 
 .big {
-  padding: 4px 5px;
-  width: 23px;
-  height: 23px;
+  padding: 5px 6px;
+  width: 24px;
+  height: 24px;
   font-size: 13px;
+  border-radius: 2px;
 }
 
 .bordered {
   padding: 2px 0;
+  width: 22px;
+  height: 23px;
   border: 1px solid #bfbfbf;
 }
 

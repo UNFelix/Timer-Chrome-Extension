@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -28,6 +30,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
+    min-height: 34px;
   }
   &__projects {
     border: none;
@@ -219,7 +222,7 @@ body {
 
 .spent {
   &__time {
-    margin-left: 8px;
+    margin-left: 4px;
   }
 }
 
@@ -234,6 +237,8 @@ body {
   justify-content: space-between;
   padding: 8px 16px;
   background-color: #f1f6ff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   &__task {
     display: flex;
     align-items: center;
@@ -278,6 +283,17 @@ body {
     font-size: 12px;
     text-transform: uppercase;
   }
+  &-btns {
+    display: flex;
+    align-items: end;
+  }
+  &__id {
+    margin-left: -3px;
+    color: #262626;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+  }
 }
 
 .create {
@@ -294,6 +310,7 @@ body {
 .email {
   &__icon {
     margin: 0 8px;
+    padding: 4px 5px !important;
     width: 22px;
     height: 22px;
     padding: 5px 2px;
