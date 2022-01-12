@@ -26,6 +26,7 @@ body {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   &__nav {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,10 +40,59 @@ body {
     cursor: pointer;
   }
 }
+.projects {
+  top: 46px;
+  left: 1px;
+  width: 100%;
+  max-width: 250px;
+  padding: 8px;
+  &__title {
+    margin-bottom: 8px;
+    color: #262626;
+    font-weight: 600;
+  }
+}
 .project {
+  display: flex;
+  max-width: 242px;
+  width: 100%;
+  padding: 8px 16px 8px 8px;
+  margin-bottom: 8px;
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  overflow: hidden;
+  text-decoration: none;
   &__dropdown {
     width: 10px;
     height: 10px;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    color: #fff;
+    line-height: 56px;
+    font-size: 18px;
+    background-color: rgb(17, 145, 110);
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+  &__title {
+    overflow: hidden;
+    color: #262626;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+  &__pretitle,
+  &__descr {
+    display: inline;
+    color: #8c8c8c;
   }
 }
 
@@ -431,8 +481,6 @@ body {
   animation: show 0.5s 1 forwards;
   &__title {
     margin-bottom: 2px;
-    color: #262626;
-    font-weight: 600;
   }
   &__block {
     display: flex;

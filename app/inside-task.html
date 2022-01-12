@@ -18,8 +18,28 @@
     <nav class="header__nav">
       <button class="header__projects">
         <img class="project__dropdown" src="./img/dropdown.svg" alt="dropdown">
-        <span class="project">Gearheart - General</span>
+        <span class="project__active">Gearheart - General</span>
       </button>
+      <div class="projects dropdown hidden">
+        <h4 class="projects__title">Select a Project to Get Started</h4>
+        <!-- <div class="projects__blocks"> -->
+        <a class="project" href="#">
+          <div class="project__icon">GE</div>
+          <div class="project__info">
+            <div class="project__title">
+              <div class="project__pretitle">
+                <span class="pretitle__item">GE</span>
+                <span class="pretitle__item">|</span>
+              </div>
+              Gearheart - General
+            </div>
+            <div class="project__descr">
+              74 participants
+            </div>
+          </div>
+        </a>
+        <!-- </div> -->
+      </div>
       <div class="time">
         <div class="time__block">
           <img class="hourglass" src="./img/hourglass.svg" alt="hourglass">
@@ -42,7 +62,7 @@
         <img class="project__dropdown" src="./img/dropdown.svg" alt="dropdown">
       </button>
       <div class="activities dropdown hidden">
-        <h4 class="activities__title">My last activities:</h4>
+        <h4 class="activities__title projects__title">My last activities:</h4>
         <div class="activities__blocks">
           <div class="activities__block">
             <div class="task__controlls">
